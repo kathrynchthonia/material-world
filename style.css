@@ -13,3 +13,23 @@ Tags: bootstrap
 /*
  * Globals
  */
+
+.brand-logo {
+  font-size: 1.33rem !important;
+  margin-left: 1.33rem !important;
+}
+@media screen and (max-width: 422px) {
+  .brand-logo {
+    display: none !important;
+  }
+}
+/* @media only screen and (max-width: 1055px) {
+  .brand-logo {
+    font-size: 22px !important;
+  }
+}
+@media only screen and (max-width: 510px) {
+  .brand-logo {
+    font-size: 14px !important;
+  }
+} */

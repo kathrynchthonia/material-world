@@ -17,8 +17,51 @@
   <title>Catholic Insurance Man</title>
 </head>
 
-<body>
-  <!-- Header -->
+<body id="home" class="scrollspy">
+  <!-- Navbar -->
   <div class="navbar-fixed">
-    <nav class="blue darken-1"></nav>
+    <nav class="blue">
+      <div>
+        <div class="nav-wrapper">
+          <a href="#" class="brand-logo orange-text">Catholic Insurance Man</a>
+          <a href="#" data-target="mobile-nav" class="sidenav-trigger">
+            <i class="material-icons">menu</i>
+          </a>
+          <ul class="right hide-on-med-and-down">
+            <li>
+              <a href="#home">Home</a>
+            </li>
+            <li>
+              <a href="#service">Our Services</a>
+            </li>
+            <li>
+              <a href="#contact">Get Started</a>
+            </li>
+            <li>
+              <a href="#about">About</a>
+            </li>
+            <li>
+              <a href="#contact">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
   </div>
+  <ul class="sidenav" id="mobile-nav">
+    <li>
+      <a href="#home">Home</a>
+    </li>
+    <li>
+      <a href="#service">Our Services</a>
+    </li>
+    <li>
+      <a href="#contact">Get Started</a>
+    </li>
+    <li>
+      <a href="#about">About</a>
+    </li>
+    <li>
+      <a href="#contact">Contact</a>
+    </li>
+  </ul>
