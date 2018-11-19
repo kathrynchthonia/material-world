@@ -1,5 +1,15 @@
 <?php get_header(); ?>
 
-<h1 class="btn blue white-text">Help!</h1>
+
+  <?php if(have_posts()) : ?>
+    <?php while(have_posts()) : the_post(); ?>
+    <div class="container flow-text">
+      <?php the_content(); ?>
+      </div>
+    <?php endwhile; ?>
+    <?php else : ?>
+      <p><?php __('No Posts Found') ?></p>
+    <?php endif; ?>
+
 
 <?php get_footer(); ?>
