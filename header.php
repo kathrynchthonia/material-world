@@ -43,13 +43,13 @@
       <nav class="blue darken-2">
         <div class="nav-wrapper pr-0">
           <!-- .sr Classes call scroll reveal on elements -->
-          <a href="#" class="brand-logo hide-on-small-and-down amber-text text-darken-2 bold sr1"
+          <a href="#" class="brand-logo hide-on-small-and-down amber-text text-darken-2 bold hoverable"
           ><?php bloginfo('name'); ?></a
           >
           <a href="#" data-target="mobile-nav" class="sidenav-trigger">
             <i class="material-icons">menu</i>
           </a>
-          <div class="right hide-on-med-and-down sr1">
+          <div class="right hide-on-med-and-down">
           <?php wp_nav_menu(); ?>
         </div>
       </nav>
@@ -73,7 +73,7 @@
 
     <!-- Hero -->
     <div class="row blue darken-4">
-      <div class="container sr2">
+      <div class="container">
         
           <h5
           class="mobile-header hide-on-med-and-up center amber-text text-darken-2 bold"
@@ -89,7 +89,7 @@
     <!-- Call now -->
     <div class="row scrollspy" id='contact'>
       <div class="col s6 offset-s3 center py-15">
-        <a href='tel:+1-877-549-1212' class="btn green darken-1 waves-effect waves-light z-depth-3 sr3">
+        <a href='tel:+1-877-549-1212' class="btn green darken-1 waves-effect waves-light z-depth-3 hoverable">
           Call Now <span class="blue-text text-darken-2 bold">877-549-1212
         </span> 
         </a>

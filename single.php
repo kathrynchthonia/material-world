@@ -4,10 +4,8 @@
   <?php if(have_posts()) : ?>
     <?php while(have_posts()) : the_post(); ?>
     <div class="container flow-text">
-      <h2 class="flow-text center">
-        <a class='white-text bold amber darken-2 z-depth-2 hoverable' href="<?php the_permalink(); ?>">
+      <h2 class="flow-text center white-text bold amber darken-2 z-depth-2">
         <?php the_title(); ?>
-        </a>
       </h2>
       <p class="flow-text">
       by 
@@ -20,14 +18,14 @@
         <?php the_post_thumbnail(); ?>
         </div>
       <?php endif; ?>
-      <?php the_excerpt(); ?>
+      <?php the_content(); ?>
+      <hr>
+      <?php comments_template(); ?>
       </div>
     <?php endwhile; ?>
     <?php else : ?>
       <p><?php __('No Posts Found') ?></p>
     <?php endif; ?>
-
-
 
 
 <?php get_footer(); ?>

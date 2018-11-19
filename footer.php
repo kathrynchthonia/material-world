@@ -1,9 +1,23 @@
+  <!-- Sidebar -->
+<ul class="sidenav indigo darken-4 white-text" id="side-bar" style="width: 60%;">
+    <!-- Widget area -->
+    <?php if(is_active_sidebar('sidebar')): ?>
+      <?php dynamic_sidebar('sidebar'); ?>
+    <?php endif; ?>
+    <!-- End widget area -->
+    </ul>
+
+    <!-- End sidebar -->
+  
   <!-- Fixed Action Call Button -->
   <div class="fixed-action-btn">
-    <a href="tel:+1-877-549-1212" class="btn-floating pulse btn-large green darken-2 waves-effect waves-light initfab"><i class="material-icons white-text">phone</i>
+    <a href="tel:+1-877-549-1212" class="btn-floating pulse btn-large green darken-2 waves-effect waves-light hoverble initfab"><i class="material-icons white-text">phone</i>
       </a>
       <ul>
-        <li><a href="#start" class="btn-floating indigo darken-4 darken-2 waves-effect waves-light"><i class="material-icons white-text">email</i>
+        <li><a href="#start" class="btn-floating indigo darken-4 darken-2 waves-effect waves-light hoverable"><i class="material-icons white-text">email</i>
+        </a></li>
+         <!-- Activates Sidebar -->
+         <li><a href="#" class="btn-floating indigo darken-4 darken-2 waves-effect waves-light sidenav-trigger show-on-large" data-target="side-bar" ><i class="material-icons white-text">menu</i>
         </a></li>
       </ul>
   </div>
@@ -64,6 +78,11 @@
       // Sidenav
       const sideNav = document.querySelector(".sidenav");
       M.Sidenav.init(sideNav, {
+        draggable: true
+      });
+      // Sidebar
+      const sideBar = document.querySelector("#side-bar");
+      M.Sidenav.init(sideBar, {
         draggable: true
       });
 
