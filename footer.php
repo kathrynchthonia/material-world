@@ -12,15 +12,18 @@
 
     <!-- End sidebar -->
   
-  <!-- Fixed Action Call Button -->
+  <!-- Fixed Action Menu Button -->
   <div class="fixed-action-btn">
-    <a href="tel:+1-877-549-1212" class="btn-floating pulse btn-large green darken-2 waves-effect waves-light hoverble initfab"><i class="material-icons white-text">phone</i>
+    <a href="#" class="btn-floating pulse btn-large indigo darken-4 waves-effect waves-light hoverble sidenav-trigger initfab" data-target="side-bar"><i class="material-icons white-text">menu</i>
       </a>
       <ul>
-         <!-- Activates Sidebar -->
-         <li><a href="#" class="btn-floating indigo darken-4 darken-2 waves-effect waves-light sidenav-trigger show-on-large" data-target="side-bar" ><i class="material-icons white-text">email</i>
-        </a></li>
-
+        <!-- Activates Sidebar -->
+        <li><a href="#" class="btn-floating indigo darken-4 darken-2 waves-effect waves-light sidenav-trigger show-on-large hoverable" data-target="side-bar" ><i class="material-icons white-text">email</i>
+       </a></li>
+        <!-- Call Btn Sidebar -->
+        <li><a href="tel:+1-877-549-1212" class="btn-floating green darken-2 darken-2 waves-effect waves-light show-on-large hoverable" data-target="side-bar" ><i class="material-icons white-text">phone</i>
+      </a></li>
+      
       </ul>
   </div>
 
