@@ -109,7 +109,14 @@
 
         //Dropdown Menu
         var dropdowns = document.querySelectorAll('.dropdown-trigger');
-        var ddinstances = M.Dropdown.init(dropdowns);
+        var ddinstances = M.Dropdown.init(dropdowns, {
+            inDuration: 300,
+            outDuration: 225,
+            constrain_width: true, // Does not change width of dropdown to that of the activator
+            hover: true, // Activate on hover
+            belowOrigin: true, // Displays dropdown below the button
+            alignment: 'left' // Displays dropdown with edge aligned to the left of button
+        });
         });
     </script>
 
