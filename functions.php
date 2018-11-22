@@ -19,7 +19,8 @@ function mw_theme_setup() {
   add_theme_support('post-thumbnails');
   // Nav Menus
   register_nav_menus(array(
-          'Primary'   =>  __( 'Primary Menu')
+          'Primary'   =>  __( 'Primary Menu'),
+          'Mobile'   =>  __( 'Mobile Menu')
       )
   );
 

@@ -46,9 +46,6 @@
           <a href="#" class="brand-logo hide-on-small-and-down amber-text text-darken-2 bold hoverable"
           ><?php bloginfo('name'); ?></a
           >
-          <a href="#" data-target="mobile-nav" class="sidenav-trigger">
-            <i class="material-icons">menu</i>
-          </a>
           <div class="right hide-on-med-and-down">
           <?php
               wp_nav_menu( array(
@@ -61,12 +58,7 @@
         </div>
       </nav>
     </div>
-    <div class="sidenav blue white-text" id='mobile-nav'>
-      <ul>
-        <li class='right-align'><i class="fas fa-window-close white-text mr-25 sidenav-close"></i></li>
-      </ul>
-      <?php wp_nav_menu(); ?>
-    </div>
+
 
 
     <!-- End Header -->
