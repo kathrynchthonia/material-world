@@ -50,38 +50,46 @@
             <i class="material-icons">menu</i>
           </a>
           <div class="right hide-on-med-and-down">
-          <?php wp_nav_menu(); ?>
+          <?php
+              wp_nav_menu( array(
+                  'menu' => 'Primary',
+                  'theme_location'=>'Primary',
+                  'menu_class' => 'hide-on-med-and-down',
+                  'walker' => new wp_materialize_navwalker()
+              ));
+          ?>
         </div>
       </nav>
     </div>
-    <ul class="sidenav blue" id="mobile-nav">
-      <li class='right-align'><i class="fas fa-window-close white-text mr-25 sidenav-close"></i></li>
-      <li><a class='white-text' href="#home">Home</a></li>
-      <li><a class='white-text' href="#service">Our Services</a></li>
-      <li><a class='white-text' href="#start">Get Started</a></li>
-      <li><a class='white-text' href="#about">About</a></li>
-      <li><a class='white-text' href="#contact">Contact</a></li>
-    </ul>
+    <div class="sidenav blue white-text" id='mobile-nav'>
+      <ul>
+        <li class='right-align'><i class="fas fa-window-close white-text mr-25 sidenav-close"></i></li>
+      </ul>
+      <?php wp_nav_menu(); ?>
+    </div>
 
-    <div class="blue darken-4">
+
+    <!-- End Header -->
+
+       <div class="blue darken-4">
     <!-- Family Leader -->
     <img
-      src="./img/familyleader2.jpg"
+      src="<?php echo get_theme_mod('showcase_image', get_bloginfo('template_url').'/img/showcase.jpg'); ?>"
       alt="Family"
       class="leader-img responsive-img z-depth-2 blue"
     />
 
     <!-- Hero -->
     <div class="row blue darken-4">
-      <div class="container">
+      <div class="container sr2">
         
           <h5
-          class="mobile-header hide-on-med-and-up center amber-text text-darken-2 bold"
+          class="mobile-header center amber-text text-darken-2 bold"
         >
         <?php bloginfo('name'); ?>
         </h5>
         <h6 class="white-text center bold">
-          Serving the Catholic Community for Over 30 Years
+          <?php echo get_theme_mod('showcase_heading', 'Serving the Catholic Community for Over 30 Years'); ?>
         </h6>
       </div>
     </div>
@@ -89,13 +97,11 @@
     <!-- Call now -->
     <div class="row scrollspy" id='contact'>
       <div class="col s6 offset-s3 center py-15">
-        <a href='tel:+1-877-549-1212' class="btn green darken-1 waves-effect waves-light z-depth-3 hoverable">
-          Call Now <span class="blue-text text-darken-2 bold">877-549-1212
+        <a href='<?php echo get_theme_mod('btn_url', 'tel:+1-877-549-1212'); ?>' class="btn green darken-1 waves-effect waves-light z-depth-3 sr3">
+        <?php echo get_theme_mod('showcase_cta', 'Call Now '); ?>
+        <span class="blue-text text-darken-2 bold"><?php echo get_theme_mod('showcase_blue', '877-549-1212'); ?>
         </span> 
         </a>
       </div>
     </div>
-
-    </div>
-
-    <!-- End Header -->
+</div>
