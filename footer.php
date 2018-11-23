@@ -35,9 +35,9 @@
 
   <?php wp_footer(); ?>
     <!-- Scroll Reveal -->
-    <script async src="https://unpkg.com/scrollreveal@4"></script>
+    <script  src="https://unpkg.com/scrollreveal@4"></script>
 
-    <script async>
+    <script >
         ScrollReveal().reveal('.sr1');
         ScrollReveal().reveal('.sr2');
         ScrollReveal().reveal('.sr3');
@@ -72,7 +72,7 @@
         ScrollReveal().reveal('.sr32');
     </script>
     <!-- Materialize JS -->
-    <script async src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script  src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
     <script>
       document.addEventListener('DOMContentLoaded', function() {
         // ScrollSpy
