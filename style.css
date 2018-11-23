@@ -168,6 +168,10 @@ input {
   margin-top: 25px !important;
   margin-bottom: 25px !important;
 }
+.my-auto {
+  margin-top: auto !important;
+  margin-bottom: auto !important;
+}
 
 .mt-0 {
   margin-top: 0px !important;

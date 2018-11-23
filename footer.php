@@ -103,6 +103,9 @@
         var initfab = document.querySelectorAll('.fixed-action-btn');
         var instances = M.FloatingActionButton.init(initfab, {direction: 'left', hover: true});
 
+        // Collapsable
+        var collaps = document.querySelectorAll('.collapsible');
+        var icolaps = M.Collapsible.init(collaps);
         
 
         //Dropdown Menu
