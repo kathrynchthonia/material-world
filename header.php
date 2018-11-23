@@ -3,16 +3,16 @@
   <head>
     <meta charset='<?php bloginfo('charset'); ?>'>
     <!-- Import Google Fonts -->
-    <link
+    <link defer
       href="https://fonts.googleapis.com/css?family=Cinzel|Lato"
       rel="stylesheet"
     />
     <!-- Import Google Icon Font -->
-    <link
+    <link defer
       href="https://fonts.googleapis.com/icon?family=Material+Icons"
       rel="stylesheet"
     />
-    <link
+    <link defer
       rel="stylesheet"
       href="https://use.fontawesome.com/releases/v5.5.0/css/all.css"
       integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU"
@@ -66,7 +66,7 @@
        <div class="blue darken-4">
     <!-- Family Leader -->
     <img
-      src="<?php echo get_theme_mod('showcase_image', get_bloginfo('template_url').'/img/showcase.jpg'); ?>"
+      src="<?php echo get_theme_mod('showcase_image', get_bloginfo('template_url').'\img\showcase.jpg'); ?>"
       alt="Family"
       class="leader-img responsive-img z-depth-2 blue"
     />
